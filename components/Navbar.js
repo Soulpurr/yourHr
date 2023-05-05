@@ -42,7 +42,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href={`/addProfile/updateProfile${profile[0]._id}`}
+          href={`/addProfile/updateProfile${profile[0]?._id}`}
           className="mx-4 cursor-pointer text-white"
         >
           UpdateProfile
@@ -110,7 +110,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href={`/addProfile/updateProfile${profile[0]._id}`}
+              href={`/addProfile/updateProfile${profile[0]?._id}`}
               className="mx-4 cursor-pointer text-white"
             >
               UpdateProfile
