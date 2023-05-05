@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function FormPage() {
   const router = useRouter();
   const [recieved, setrecieved] = useState(true);
@@ -124,6 +125,7 @@ function FormPage() {
 
   return (
     <div className="bg-gray-100 min-h-screen">
+      <ToastContainer />
       <div className="bg-blue-500 py-6 mb-6">
         <h1 className="text-center text-white font-bold text-3xl">
           {router.query.slug ? router.query.slug.slice(0, 13) : "Add"}
