@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 function FormPage() {
   const router = useRouter();
@@ -48,6 +48,7 @@ function FormPage() {
     // setdata({ link: img.data.secure_url });
     let asset = await img.json();
     if (!asset.secure_url) {
+        alert("Please upload again")
       toast("Error upload again", {
         position: "top-right",
         autoClose: 1000,
