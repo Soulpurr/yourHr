@@ -43,7 +43,7 @@ function ProfilePage() {
                 >
                   First Name
                 </label>
-                <span className="text-gray-900">{profile[0].fname}</span>
+                <span className="text-gray-900">{profile[0]?.fname}</span>
               </div>
               <div className="mb-4">
                 <label
@@ -52,7 +52,7 @@ function ProfilePage() {
                 >
                   Last Name
                 </label>
-                <span className="text-gray-900">{profile[0].lname}</span>
+                <span className="text-gray-900">{profile[0]?.lname}</span>
               </div>
               <div className="mb-4">
                 <label
@@ -61,7 +61,7 @@ function ProfilePage() {
                 >
                   Age
                 </label>
-                <span className="text-gray-900">{profile[0].age}</span>
+                <span className="text-gray-900">{profile[0]?.age}</span>
               </div>
               <div className="mb-4">
                 <label
@@ -70,7 +70,7 @@ function ProfilePage() {
                 >
                   Email
                 </label>
-                <span className="text-gray-900">{profile[0].email}</span>
+                <span className="text-gray-900">{profile[0]?.email}</span>
               </div>
               <div className="mb-4">
                 <label
@@ -79,7 +79,7 @@ function ProfilePage() {
                 >
                   Phone Number
                 </label>
-                <span className="text-gray-900">{profile[0].phoneNo}</span>
+                <span className="text-gray-900">{profile[0]?.phoneNo}</span>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ function ProfilePage() {
                   Resume
                 </label>
                 <iframe
-                  src={profile[0].resume}
+                  src={profile[0]?.resume}
                   className="h-64 w-full"
                 ></iframe>
               </div>
