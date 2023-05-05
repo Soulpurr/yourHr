@@ -4,7 +4,9 @@ import "react-toastify/ReactToastify.css";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <ToastContainer>
+        <Component {...pageProps} />
+      </ToastContainer>
     </>
   );
 }
