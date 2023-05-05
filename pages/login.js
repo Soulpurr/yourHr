@@ -1,11 +1,10 @@
-import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
 function LoginForm() {
-    const router=useRouter()
+  const router = useRouter();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -27,7 +26,7 @@ function LoginForm() {
       body: JSON.stringify(formData),
     });
     let res = await log.json();
-    console.log(res)
+    console.log(res);
     console.log(res.success);
     if (res.success) {
       localStorage.setItem("token", res.token);
@@ -41,7 +40,7 @@ function LoginForm() {
         progress: undefined,
         theme: "light",
       });
-      router.push('/addProfile/Profile')
+      router.push("/addProfile/Profile");
     } else {
       toast(`${res.message}`, {
         position: "top-right",
