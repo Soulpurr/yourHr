@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
 import React from "react";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -127,7 +127,7 @@ function FormPage() {
     <div className="bg-gray-100 min-h-screen">
       <div className="bg-blue-500 py-6 mb-6">
         <h1 className="text-center text-white font-bold text-3xl">
-          {router.query.slug?router.query.slug.slice(0,13):"Add"}
+         Add Profile
         </h1>
       </div>
       <div className="container mx-auto px-4">
